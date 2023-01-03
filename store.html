@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e692babb8888a8c16e8b5f4531166fb1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e692babb8888a8c16e8b5f4531166fb1" ></div>
+        
+</body>
+<script>    
+    
+            var map_e692babb8888a8c16e8b5f4531166fb1 = L.map(
+                "map_e692babb8888a8c16e8b5f4531166fb1",
+                {
+                    center: [35.942957, 136.198863],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ae431908bb61ece61bbdae63c3d60fce = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var circle_7fc619d61c34e4421fc5caccf041a286 = L.circle(
+                [35.942957, 136.198863],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var marker_33e946bd26276534a45da8c86ca9a9fe = L.marker(
+                [35.956477, 136.184073],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_7ebf83a255009bd3d118d2d5a4858825 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_33e946bd26276534a45da8c86ca9a9fe.setIcon(icon_7ebf83a255009bd3d118d2d5a4858825);
+        
+    
+            marker_33e946bd26276534a45da8c86ca9a9fe.bindTooltip(
+                `<div>
+                     鯖江市役所
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95bf93c5163e03dad60a49bce34fea51 = L.marker(
+                [35.938552, 136.183866],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_0fabeeccb47f24ea96ed3c825a0f59ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_95bf93c5163e03dad60a49bce34fea51.setIcon(icon_0fabeeccb47f24ea96ed3c825a0f59ee);
+        
+    
+            marker_95bf93c5163e03dad60a49bce34fea51.bindTooltip(
+                `<div>
+                     地域事業主 わどう
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b56bd77ffabca03e5bf9108e1c292c9 = L.marker(
+                [35.945618, 136.185107],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_afe109168e65f0d0106f1c93f8caabc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8b56bd77ffabca03e5bf9108e1c292c9.setIcon(icon_afe109168e65f0d0106f1c93f8caabc5);
+        
+    
+            marker_8b56bd77ffabca03e5bf9108e1c292c9.bindTooltip(
+                `<div>
+                     佐野蕎麦 塩だけで食べる異次元そば
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c079aebc1908d304ecae7e439f2c33c = L.marker(
+                [35.946157, 136.187179],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_f500534022021a3873ad4233682fcb2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9c079aebc1908d304ecae7e439f2c33c.setIcon(icon_f500534022021a3873ad4233682fcb2c);
+        
+    
+            marker_9c079aebc1908d304ecae7e439f2c33c.bindTooltip(
+                `<div>
+                     ヨーロッパン キムラヤ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b64bbe99863ffc524e9199ed587de346 = L.marker(
+                [35.946548, 136.185571],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_b44fee0902fa3e425801eb8a7ce2db5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b64bbe99863ffc524e9199ed587de346.setIcon(icon_b44fee0902fa3e425801eb8a7ce2db5a);
+        
+    
+            marker_b64bbe99863ffc524e9199ed587de346.bindTooltip(
+                `<div>
+                     ミート＆デリカささき
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0890b7b9de23e6f3ad4b0f573b6b9ead = L.marker(
+                [35.948063, 136.300009],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_0375724b7f873f6c26ab6c001e33afe4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0890b7b9de23e6f3ad4b0f573b6b9ead.setIcon(icon_0375724b7f873f6c26ab6c001e33afe4);
+        
+    
+            marker_0890b7b9de23e6f3ad4b0f573b6b9ead.bindTooltip(
+                `<div>
+                     かわだ温泉 ラポーゼかわだ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b96513454be34ad0bc03925383d563ac = L.marker(
+                [35.948063, 136.300009],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_c5979fd633012c29d50c09487e179f8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b96513454be34ad0bc03925383d563ac.setIcon(icon_c5979fd633012c29d50c09487e179f8c);
+        
+    
+            marker_b96513454be34ad0bc03925383d563ac.bindTooltip(
+                `<div>
+                     ラポーゼかわだ ほたるの里
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e80482f3581d34f439be132acfb750a = L.marker(
+                [35.967237, 136.181307],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_ac508b791e7100fd51df0e07b7090057 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0e80482f3581d34f439be132acfb750a.setIcon(icon_ac508b791e7100fd51df0e07b7090057);
+        
+    
+            marker_0e80482f3581d34f439be132acfb750a.bindTooltip(
+                `<div>
+                     リラクゼーション整体 癒しのたまご
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad7e717216f0fea0d58acfd2687e1825 = L.marker(
+                [35.946885, 136.1781753],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_22f8708a263e1aa0fefa877244ffa985 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ad7e717216f0fea0d58acfd2687e1825.setIcon(icon_22f8708a263e1aa0fefa877244ffa985);
+        
+    
+            marker_ad7e717216f0fea0d58acfd2687e1825.bindTooltip(
+                `<div>
+                     コスメティックス美香
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef9e61adb1ab4b986cb0949646cba2d6 = L.marker(
+                [35.950264, 136.177074],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_2f447add37dc82de2241054219e07d63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ef9e61adb1ab4b986cb0949646cba2d6.setIcon(icon_2f447add37dc82de2241054219e07d63);
+        
+    
+            marker_ef9e61adb1ab4b986cb0949646cba2d6.bindTooltip(
+                `<div>
+                     green parlour ベルベール
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f79aedd3e938cf6c5a4ea71c321cf3f = L.marker(
+                [35.933179, 136.212288],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_9625bde046d73110ff0f3c19da93f486 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f79aedd3e938cf6c5a4ea71c321cf3f.setIcon(icon_9625bde046d73110ff0f3c19da93f486);
+        
+    
+            marker_3f79aedd3e938cf6c5a4ea71c321cf3f.bindTooltip(
+                `<div>
+                     聴琴亭
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0400ec043a048f4b469872f8514a6da6 = L.marker(
+                [35.946248, 136.185026],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_5da0062bd881947a31aee736e4373c0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0400ec043a048f4b469872f8514a6da6.setIcon(icon_5da0062bd881947a31aee736e4373c0b);
+        
+    
+            marker_0400ec043a048f4b469872f8514a6da6.bindTooltip(
+                `<div>
+                     たんなん夢レディオ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a60ffeb8d8d1ff8498a599d4e4deb6d2 = L.marker(
+                [35.968798, 136.195586],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_e2954b9b4d84d20504d975a19dfa6f5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a60ffeb8d8d1ff8498a599d4e4deb6d2.setIcon(icon_e2954b9b4d84d20504d975a19dfa6f5b);
+        
+    
+            marker_a60ffeb8d8d1ff8498a599d4e4deb6d2.bindTooltip(
+                `<div>
+                     菓子処安価堂
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f410b3f2f78ecccedb594a9ceadb54b = L.marker(
+                [35.964309, 136.1444363],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_a3e1d70033dbfa8d4e5c764f5639cf8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f410b3f2f78ecccedb594a9ceadb54b.setIcon(icon_a3e1d70033dbfa8d4e5c764f5639cf8c);
+        
+    
+            marker_3f410b3f2f78ecccedb594a9ceadb54b.bindTooltip(
+                `<div>
+                     表具処 紅屋紅陽堂
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ea4588674dbd43527708c38b013371c = L.marker(
+                [35.943071, 136.187874],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_d42fc56ac54786295710256af8bdecf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0ea4588674dbd43527708c38b013371c.setIcon(icon_d42fc56ac54786295710256af8bdecf2);
+        
+    
+            marker_0ea4588674dbd43527708c38b013371c.bindTooltip(
+                `<div>
+                     甘味茶屋　極
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a613454c5d91a0b72506fe97e6c377db = L.marker(
+                [35.94511, 136.185926],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_44c519c9c7ebccf2d52d32c4ab149e8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a613454c5d91a0b72506fe97e6c377db.setIcon(icon_44c519c9c7ebccf2d52d32c4ab149e8a);
+        
+    
+            marker_a613454c5d91a0b72506fe97e6c377db.bindTooltip(
+                `<div>
+                     亀屋萬年堂
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7f3ad9a0509c60622fd07e3d89fc256 = L.marker(
+                [35.948256, 136.164807],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_f1635b0c866eecbc00965ab6654f0b13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7f3ad9a0509c60622fd07e3d89fc256.setIcon(icon_f1635b0c866eecbc00965ab6654f0b13);
+        
+    
+            marker_a7f3ad9a0509c60622fd07e3d89fc256.bindTooltip(
+                `<div>
+                     とくはし整骨院
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f336ca086057130636908349cd339a6 = L.marker(
+                [35.94506, 136.183602],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_708c0f0c36a3e92f8045f3e3f6900310 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8f336ca086057130636908349cd339a6.setIcon(icon_708c0f0c36a3e92f8045f3e3f6900310);
+        
+    
+            marker_8f336ca086057130636908349cd339a6.bindTooltip(
+                `<div>
+                     株式会社内田工務店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3cf314d97028a0651bac2e963426d557 = L.marker(
+                [35.944437, 136.149706],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_65ee71fcaeaf176b233fe2f2a0bdc6db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3cf314d97028a0651bac2e963426d557.setIcon(icon_65ee71fcaeaf176b233fe2f2a0bdc6db);
+        
+    
+            marker_3cf314d97028a0651bac2e963426d557.bindTooltip(
+                `<div>
+                     林呉服店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af5f2062b794c4a23d4c73976fcccc06 = L.marker(
+                [35.949481, 136.185429],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_b597518f7185e514abc322b30caeaad2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_af5f2062b794c4a23d4c73976fcccc06.setIcon(icon_b597518f7185e514abc322b30caeaad2);
+        
+    
+            marker_af5f2062b794c4a23d4c73976fcccc06.bindTooltip(
+                `<div>
+                     酒のあかし
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e69591697e98e806f44285309eccd05 = L.marker(
+                [35.945424, 136.186115],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_ad22a4a55cc79320a1176583698305a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4e69591697e98e806f44285309eccd05.setIcon(icon_ad22a4a55cc79320a1176583698305a5);
+        
+    
+            marker_4e69591697e98e806f44285309eccd05.bindTooltip(
+                `<div>
+                     エルザスコーヒー
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c780e969122af18094a009212929695 = L.marker(
+                [35.943571, 136.187757],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_fb3733bd5c456c23171860390eaeb5dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5c780e969122af18094a009212929695.setIcon(icon_fb3733bd5c456c23171860390eaeb5dd);
+        
+    
+            marker_5c780e969122af18094a009212929695.bindTooltip(
+                `<div>
+                     久保田酒店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e614cf472741bad63cee905feddd8941 = L.marker(
+                [35.947309, 136.181271],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_685f481c97782a1c5ee22fd066230c82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e614cf472741bad63cee905feddd8941.setIcon(icon_685f481c97782a1c5ee22fd066230c82);
+        
+    
+            marker_e614cf472741bad63cee905feddd8941.bindTooltip(
+                `<div>
+                     イル・ヴィゴーレ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0b85552a9950efbd61f1a68ad1a2f8c = L.marker(
+                [35.947309, 136.181271],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_84aca8717244fb800c5e26b3f3a3b4da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e0b85552a9950efbd61f1a68ad1a2f8c.setIcon(icon_84aca8717244fb800c5e26b3f3a3b4da);
+        
+    
+            marker_e0b85552a9950efbd61f1a68ad1a2f8c.bindTooltip(
+                `<div>
+                     メゾン・ド・レトワール
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_212e23c86f963ae4a706d41b1b930e97 = L.marker(
+                [35.942755, 136.198842],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_080141917edf75ce22fb22aa55b5013d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_212e23c86f963ae4a706d41b1b930e97.setIcon(icon_080141917edf75ce22fb22aa55b5013d);
+        
+    
+            marker_212e23c86f963ae4a706d41b1b930e97.bindTooltip(
+                `<div>
+                     めがねミュージアム
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15f17c8acc7bb1bfee294f9c18ade305 = L.marker(
+                [35.972728, 136.175818],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_e51d5e12a2ebd2d8fd9bbadbc8b111ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_15f17c8acc7bb1bfee294f9c18ade305.setIcon(icon_e51d5e12a2ebd2d8fd9bbadbc8b111ae);
+        
+    
+            marker_15f17c8acc7bb1bfee294f9c18ade305.bindTooltip(
+                `<div>
+                     協同組合 鯖江市繊維協会 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a8f2993068f9b95f17a1a055099fa33 = L.marker(
+                [35.96979, 136.180873],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_875bc2dcea76f1216af60550d9b96731 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8a8f2993068f9b95f17a1a055099fa33.setIcon(icon_875bc2dcea76f1216af60550d9b96731);
+        
+    
+            marker_8a8f2993068f9b95f17a1a055099fa33.bindTooltip(
+                `<div>
+                     田中眼鏡
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fa0691c8967b733851e56b7079ff36e = L.marker(
+                [35.94661, 136.190915],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_5eae82d565342fcadd0860ffd2c53c13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9fa0691c8967b733851e56b7079ff36e.setIcon(icon_5eae82d565342fcadd0860ffd2c53c13);
+        
+    
+            marker_9fa0691c8967b733851e56b7079ff36e.bindTooltip(
+                `<div>
+                     ベルジェ・ダルカディ弁慶堂
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7078ab86dfec2e5b3c49a26a94d83f89 = L.marker(
+                [35.944146, 136.185885],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_f580ffb3707feb19a4552644fd3967b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7078ab86dfec2e5b3c49a26a94d83f89.setIcon(icon_f580ffb3707feb19a4552644fd3967b0);
+        
+    
+            marker_7078ab86dfec2e5b3c49a26a94d83f89.bindTooltip(
+                `<div>
+                     昭和堂
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9488b4b266ccc852a110cc626f96dba = L.marker(
+                [35.94366, 136.179702],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_04625be610c2a364197f7ce37474ce6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a9488b4b266ccc852a110cc626f96dba.setIcon(icon_04625be610c2a364197f7ce37474ce6e);
+        
+    
+            marker_a9488b4b266ccc852a110cc626f96dba.bindTooltip(
+                `<div>
+                     けーきやYANAGIMOTO 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d53926da0ca56d0e485dfd3a41551d08 = L.marker(
+                [35.9864263, 136.167916],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_70b4878b58bfc5e646ceb8e8470834a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d53926da0ca56d0e485dfd3a41551d08.setIcon(icon_70b4878b58bfc5e646ceb8e8470834a4);
+        
+    
+            marker_d53926da0ca56d0e485dfd3a41551d08.bindTooltip(
+                `<div>
+                     加藤吉平商店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5eb44796e5daa0b59c5d047e5ca82a50 = L.marker(
+                [35.966834, 136.180432],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_0ee83a0cc664d2e5b896d529384d754d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5eb44796e5daa0b59c5d047e5ca82a50.setIcon(icon_0ee83a0cc664d2e5b896d529384d754d);
+        
+    
+            marker_5eb44796e5daa0b59c5d047e5ca82a50.bindTooltip(
+                `<div>
+                     鯖江菓子工房Yamahatsu（やまはつ）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64539a92e8601a21a3ad7fd6f5a05c1b = L.marker(
+                [35.932178, 136.187118],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_37d256b7bcfd58a5adcddff94030d306 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_64539a92e8601a21a3ad7fd6f5a05c1b.setIcon(icon_37d256b7bcfd58a5adcddff94030d306);
+        
+    
+            marker_64539a92e8601a21a3ad7fd6f5a05c1b.bindTooltip(
+                `<div>
+                     Little Deco(リトル・デコ）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e217015fe898f3e323519ba378927e49 = L.marker(
+                [35.943982, 136.183152],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_7579525cd2f0f50df07ecda48e3ccb4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e217015fe898f3e323519ba378927e49.setIcon(icon_7579525cd2f0f50df07ecda48e3ccb4c);
+        
+    
+            marker_e217015fe898f3e323519ba378927e49.bindTooltip(
+                `<div>
+                     ベーカリーショップ上坂
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49dc4605333a6b983fe5cac097abfe8a = L.marker(
+                [35.9796678, 136.1770166],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_b41ad2c3cb9b52d4e92a779d4f0b7a77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_49dc4605333a6b983fe5cac097abfe8a.setIcon(icon_b41ad2c3cb9b52d4e92a779d4f0b7a77);
+        
+    
+            marker_49dc4605333a6b983fe5cac097abfe8a.bindTooltip(
+                `<div>
+                     マツヤベーカリー
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_212b783b4eeeac22c3e7337c03eb8ce3 = L.marker(
+                [35.945268, 136.179955],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_4a4543d7b06d4872b1f5555354ed06cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_212b783b4eeeac22c3e7337c03eb8ce3.setIcon(icon_4a4543d7b06d4872b1f5555354ed06cc);
+        
+    
+            marker_212b783b4eeeac22c3e7337c03eb8ce3.bindTooltip(
+                `<div>
+                     富士屋会館
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0273c98c1c2a583e77645800463d9db = L.marker(
+                [35.943435, 136.194276],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_3bc3beb5f05a73e58732ebf3e541e16c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a0273c98c1c2a583e77645800463d9db.setIcon(icon_3bc3beb5f05a73e58732ebf3e541e16c);
+        
+    
+            marker_a0273c98c1c2a583e77645800463d9db.bindTooltip(
+                `<div>
+                     蕎麦 旨酒 亀蔵
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec700ea8cb2d5b9d7bc7330c6523d822 = L.marker(
+                [35.979873, 136.1814823],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_e0a824610a7057e98038f59f637e6a18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ec700ea8cb2d5b9d7bc7330c6523d822.setIcon(icon_e0a824610a7057e98038f59f637e6a18);
+        
+    
+            marker_ec700ea8cb2d5b9d7bc7330c6523d822.bindTooltip(
+                `<div>
+                     ヴィヴァーチェ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64f4a73e35afc799af4dab84afa0df0d = L.marker(
+                [35.953233, 136.273842],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_c434061d7364225667d35f266dbe13ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_64f4a73e35afc799af4dab84afa0df0d.setIcon(icon_c434061d7364225667d35f266dbe13ab);
+        
+    
+            marker_64f4a73e35afc799af4dab84afa0df0d.bindTooltip(
+                `<div>
+                     椀椀（わんわん） 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e0866586180a56ae3e746d027a34916 = L.marker(
+                [35.945402, 136.194917],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_13831d045ade36391410e8986684ec96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6e0866586180a56ae3e746d027a34916.setIcon(icon_13831d045ade36391410e8986684ec96);
+        
+    
+            marker_6e0866586180a56ae3e746d027a34916.bindTooltip(
+                `<div>
+                     獏の棲む森
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fdd39d28f726624fc3cccebc93ee5665 = L.marker(
+                [35.941391, 136.188801],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_1121ee8114c71d1232ff81748fc7a07d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fdd39d28f726624fc3cccebc93ee5665.setIcon(icon_1121ee8114c71d1232ff81748fc7a07d);
+        
+    
+            marker_fdd39d28f726624fc3cccebc93ee5665.bindTooltip(
+                `<div>
+                     お好みハウスセレネ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e12734cdfe6d0a9bfc0d097e050b36a = L.marker(
+                [35.943072, 136.1856856],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_e3c1fcdd2e63ab86608bc7cd7108b864 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0e12734cdfe6d0a9bfc0d097e050b36a.setIcon(icon_e3c1fcdd2e63ab86608bc7cd7108b864);
+        
+    
+            marker_0e12734cdfe6d0a9bfc0d097e050b36a.bindTooltip(
+                `<div>
+                     EVE 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_929b144ff119b87b33febd34981d94c1 = L.marker(
+                [35.943533, 136.1800643],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_d04fbe1032f5271d175eee3905e3d8f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_929b144ff119b87b33febd34981d94c1.setIcon(icon_d04fbe1032f5271d175eee3905e3d8f7);
+        
+    
+            marker_929b144ff119b87b33febd34981d94c1.bindTooltip(
+                `<div>
+                     笑庵
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8717f00135ac6d37033c104ccdb6ca7c = L.marker(
+                [35.972078, 136.177648],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_09f9ccd2b4284303e8e6b3d63b8efa04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8717f00135ac6d37033c104ccdb6ca7c.setIcon(icon_09f9ccd2b4284303e8e6b3d63b8efa04);
+        
+    
+            marker_8717f00135ac6d37033c104ccdb6ca7c.bindTooltip(
+                `<div>
+                     まるこめ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e1ee22d906a5e25e0a9adb304a04944 = L.marker(
+                [35.944324, 136.192248],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_ec1bef2caf8c9a79adaca41de0d4bc2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1e1ee22d906a5e25e0a9adb304a04944.setIcon(icon_ec1bef2caf8c9a79adaca41de0d4bc2e);
+        
+    
+            marker_1e1ee22d906a5e25e0a9adb304a04944.bindTooltip(
+                `<div>
+                     パイ工房Kou
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a8dc2d73e70771c1940b42fc03a2454 = L.marker(
+                [35.970687, 136.18059],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_fd23000a98d37938cc33ff78bcb60e64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4a8dc2d73e70771c1940b42fc03a2454.setIcon(icon_fd23000a98d37938cc33ff78bcb60e64);
+        
+    
+            marker_4a8dc2d73e70771c1940b42fc03a2454.bindTooltip(
+                `<div>
+                     ボストンクラブ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_008af5ab28b823f8a08ca303b2b86555 = L.marker(
+                [35.948698, 136.180721],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_a103d6b515caae74b7b72283adbc6897 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_008af5ab28b823f8a08ca303b2b86555.setIcon(icon_a103d6b515caae74b7b72283adbc6897);
+        
+    
+            marker_008af5ab28b823f8a08ca303b2b86555.bindTooltip(
+                `<div>
+                     道の駅西山公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0bad7577e32e7ebf9ff7e792e134fa7 = L.marker(
+                [35.942721, 136.176278],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_0ad58a1b4c7fd088de3b91fe6b68f2c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b0bad7577e32e7ebf9ff7e792e134fa7.setIcon(icon_0ad58a1b4c7fd088de3b91fe6b68f2c6);
+        
+    
+            marker_b0bad7577e32e7ebf9ff7e792e134fa7.bindTooltip(
+                `<div>
+                     カイロプラクティク らくくる
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89fed463db1bcd59a211f9045cefd88c = L.marker(
+                [35.965518, 136.186834],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_25fbbf72db9ce8b9fd075f138e707709 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_89fed463db1bcd59a211f9045cefd88c.setIcon(icon_25fbbf72db9ce8b9fd075f138e707709);
+        
+    
+            marker_89fed463db1bcd59a211f9045cefd88c.bindTooltip(
+                `<div>
+                     むらさ木亭
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb325795520de34d3d497c6e9a407cbf = L.marker(
+                [35.947715, 136.185768],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_3079e8179c2080f0cd4206d1b0dba5d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cb325795520de34d3d497c6e9a407cbf.setIcon(icon_3079e8179c2080f0cd4206d1b0dba5d1);
+        
+    
+            marker_cb325795520de34d3d497c6e9a407cbf.bindTooltip(
+                `<div>
+                     萠菖軒（みょうしょうけん）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_683486588f7776bacc8ae2306b02164e = L.marker(
+                [35.943071, 136.187874],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_713eb01164bebcae0a92865899afd8a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_683486588f7776bacc8ae2306b02164e.setIcon(icon_713eb01164bebcae0a92865899afd8a0);
+        
+    
+            marker_683486588f7776bacc8ae2306b02164e.bindTooltip(
+                `<div>
+                     シャプラ鯖江市 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc21a9fb56befb9b83e503e494ed4e92 = L.marker(
+                [35.958946, 136.146455],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_80b733dd9cff19229409b63fb1023f31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cc21a9fb56befb9b83e503e494ed4e92.setIcon(icon_80b733dd9cff19229409b63fb1023f31);
+        
+    
+            marker_cc21a9fb56befb9b83e503e494ed4e92.bindTooltip(
+                `<div>
+                     猪吉
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36c8fd2539b8717a91d9473c853cd1c2 = L.marker(
+                [35.943571, 136.187757],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_1054b0cc9736325a3d0b1680dfbc96bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_36c8fd2539b8717a91d9473c853cd1c2.setIcon(icon_1054b0cc9736325a3d0b1680dfbc96bc);
+        
+    
+            marker_36c8fd2539b8717a91d9473c853cd1c2.bindTooltip(
+                `<div>
+                     山うに屋 ほやっ停
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a5e738ba2409ab8dcd77d536df9b0c9 = L.marker(
+                [35.94216, 136.192842],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_b58e13cab3f7d4edf937f1cb66510acb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1a5e738ba2409ab8dcd77d536df9b0c9.setIcon(icon_b58e13cab3f7d4edf937f1cb66510acb);
+        
+    
+            marker_1a5e738ba2409ab8dcd77d536df9b0c9.bindTooltip(
+                `<div>
+                     ながと蕎麦
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1af494a8d835d1d887fd07be82036851 = L.marker(
+                [35.945618, 136.185107],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_4d3e4c0368e7359d888d079bf7853124 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1af494a8d835d1d887fd07be82036851.setIcon(icon_4d3e4c0368e7359d888d079bf7853124);
+        
+    
+            marker_1af494a8d835d1d887fd07be82036851.bindTooltip(
+                `<div>
+                     カンパネルラ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84eeae26ba20fabc9646ebdec45e3e70 = L.marker(
+                [35.945057, 136.185079],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_dddcb7a1df4712e99131b69cd38f862c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_84eeae26ba20fabc9646ebdec45e3e70.setIcon(icon_dddcb7a1df4712e99131b69cd38f862c);
+        
+    
+            marker_84eeae26ba20fabc9646ebdec45e3e70.bindTooltip(
+                `<div>
+                     沢崎ミシン毛糸店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f3bd2d74fadc1039f6fcae06e6e7dd1 = L.marker(
+                [35.953483, 136.274917],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_d8fe876b7768d3fa98a47fb089673780 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f3bd2d74fadc1039f6fcae06e6e7dd1.setIcon(icon_d8fe876b7768d3fa98a47fb089673780);
+        
+    
+            marker_3f3bd2d74fadc1039f6fcae06e6e7dd1.bindTooltip(
+                `<div>
+                     漆琳堂直営店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_754e2d1cd254304bbf23f5dd6aa5d7da = L.marker(
+                [35.954578, 136.208429],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_61e191fc22c37988528435f0e4c9ea1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_754e2d1cd254304bbf23f5dd6aa5d7da.setIcon(icon_61e191fc22c37988528435f0e4c9ea1a);
+        
+    
+            marker_754e2d1cd254304bbf23f5dd6aa5d7da.bindTooltip(
+                `<div>
+                     さばえおもちゃ病院
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3ae620eeb9624875005fa0824c533a8 = L.marker(
+                [35.945279, 136.186362],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_087219f19d2312ed7e59e65fce95871a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a3ae620eeb9624875005fa0824c533a8.setIcon(icon_087219f19d2312ed7e59e65fce95871a);
+        
+    
+            marker_a3ae620eeb9624875005fa0824c533a8.bindTooltip(
+                `<div>
+                     自然食品の店 キャロットハウス鯖江店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_787a65f43aa782834775e3a55df1ad78 = L.marker(
+                [35.940591, 136.18363],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_a760d520b2ac093daecbc4e5ae677349 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_787a65f43aa782834775e3a55df1ad78.setIcon(icon_a760d520b2ac093daecbc4e5ae677349);
+        
+    
+            marker_787a65f43aa782834775e3a55df1ad78.bindTooltip(
+                `<div>
+                     清雲堂
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe76d492e6a0c16daee1da8e016907ae = L.marker(
+                [35.977794, 136.1651163],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_856361dfd56546929d5d2e17891d7cb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fe76d492e6a0c16daee1da8e016907ae.setIcon(icon_856361dfd56546929d5d2e17891d7cb3);
+        
+    
+            marker_fe76d492e6a0c16daee1da8e016907ae.bindTooltip(
+                `<div>
+                     さばえ子育てサポートおもちゃ病院
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56eecd37e69c242243ecba1a5ff06f3a = L.marker(
+                [35.954578, 136.208429],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_866efdcb48f90ed420a0c8f8b26266c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_56eecd37e69c242243ecba1a5ff06f3a.setIcon(icon_866efdcb48f90ed420a0c8f8b26266c3);
+        
+    
+            marker_56eecd37e69c242243ecba1a5ff06f3a.bindTooltip(
+                `<div>
+                     鯖江市環境教育支援センター(エコネットさばえ)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49bb8697444aa627fa7058e0dba6e990 = L.marker(
+                [35.943304, 136.182599],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_f0ff0349cfb345fdd9bcba1b0d69d57d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_49bb8697444aa627fa7058e0dba6e990.setIcon(icon_f0ff0349cfb345fdd9bcba1b0d69d57d);
+        
+    
+            marker_49bb8697444aa627fa7058e0dba6e990.bindTooltip(
+                `<div>
+                     ホクトフード
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e47c823ef3da26530b361b3e15645673 = L.marker(
+                [35.944324, 136.186765],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_6e439e9f790d5dd931b2646b3583670b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e47c823ef3da26530b361b3e15645673.setIcon(icon_6e439e9f790d5dd931b2646b3583670b);
+        
+    
+            marker_e47c823ef3da26530b361b3e15645673.bindTooltip(
+                `<div>
+                     ヨコヤマ写真館
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9551410a92c8cf0d9087e5baa8d671c8 = L.marker(
+                [35.945468, 136.184143],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_ec12b6163b3010bd8007897375344fc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9551410a92c8cf0d9087e5baa8d671c8.setIcon(icon_ec12b6163b3010bd8007897375344fc0);
+        
+    
+            marker_9551410a92c8cf0d9087e5baa8d671c8.bindTooltip(
+                `<div>
+                     （有）栄進堂 本店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7e8bd0c7b9b7365f96913e2191647de = L.marker(
+                [35.944332, 136.184996],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_446ebcc996fec0f96f9d04813174684d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7e8bd0c7b9b7365f96913e2191647de.setIcon(icon_446ebcc996fec0f96f9d04813174684d);
+        
+    
+            marker_a7e8bd0c7b9b7365f96913e2191647de.bindTooltip(
+                `<div>
+                     umeda１９１２
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_491a94c056f306a5e5c338502070852d = L.marker(
+                [35.946695, 136.181993],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_c2642943bf5d1a85cb1a2c23937eb20e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_491a94c056f306a5e5c338502070852d.setIcon(icon_c2642943bf5d1a85cb1a2c23937eb20e);
+        
+    
+            marker_491a94c056f306a5e5c338502070852d.bindTooltip(
+                `<div>
+                     めだか
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a01fdb30bde0dcf11eac2f784fa6664e = L.marker(
+                [35.950318, 136.206146],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_408cb46f1f47392bd01122578b46f903 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a01fdb30bde0dcf11eac2f784fa6664e.setIcon(icon_408cb46f1f47392bd01122578b46f903);
+        
+    
+            marker_a01fdb30bde0dcf11eac2f784fa6664e.bindTooltip(
+                `<div>
+                     U・F・O・アカデミー本校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05499ab7378376e726900a0907afb791 = L.marker(
+                [35.972609, 136.181659],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_cea2aa0a94fc746d4a2b67b0149c8189 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_05499ab7378376e726900a0907afb791.setIcon(icon_cea2aa0a94fc746d4a2b67b0149c8189);
+        
+    
+            marker_05499ab7378376e726900a0907afb791.bindTooltip(
+                `<div>
+                     まるちゃんらーめん
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffba3f6fcf400e2e1dc8cdbbaf0482e4 = L.marker(
+                [35.940385, 136.185374],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_749f3e8216ac9a938a040c6b6724d6f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ffba3f6fcf400e2e1dc8cdbbaf0482e4.setIcon(icon_749f3e8216ac9a938a040c6b6724d6f7);
+        
+    
+            marker_ffba3f6fcf400e2e1dc8cdbbaf0482e4.bindTooltip(
+                `<div>
+                     王山古墳群
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01881f3142191bb0abed8457df41e391 = L.marker(
+                [35.946248, 136.185026],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_39a08f0f441ed970e4a4db605c483c78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_01881f3142191bb0abed8457df41e391.setIcon(icon_39a08f0f441ed970e4a4db605c483c78);
+        
+    
+            marker_01881f3142191bb0abed8457df41e391.bindTooltip(
+                `<div>
+                     市民ホールつつじ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5922d0ac114acb4ba7a3e3fafc1469b = L.marker(
+                [35.940991, 136.179397],
+                {}
+            ).addTo(map_e692babb8888a8c16e8b5f4531166fb1);
+        
+    
+            var icon_e0e4fa896c38f664b2e3c7dbdee648de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "yellow", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b5922d0ac114acb4ba7a3e3fafc1469b.setIcon(icon_e0e4fa896c38f664b2e3c7dbdee648de);
+        
+    
+            marker_b5922d0ac114acb4ba7a3e3fafc1469b.bindTooltip(
+                `<div>
+                     たじま着付教室
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
