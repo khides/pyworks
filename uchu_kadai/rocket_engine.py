@@ -93,7 +93,7 @@ def get_Isp(MR,p_0):
     C_p = c_p/M
     T_f = get_Tf(MR)
     p_j = p_a
-    V_j = np.sqrt(2*eta_j*C_p*T_f*(1-(p_j/p_0))**((gam-1)/gam))
+    V_j = np.sqrt(2*eta_j*C_p*T_f*(1-(p_j/p_0)**((gam-1)/gam)))
     Isp = V_j/g_0
     return Isp
     
