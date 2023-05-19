@@ -18,31 +18,32 @@ p_a = 10 * 1000 # Pa　大気圧
 ts = 10/1000 # s　燃焼室滞在時間
 
 #推進剤に関するパラメタ
-#酸化剤　F2
-W_o = 38# 単位[kg/kmol]　酸化剤剤分子量
-rho_o = 1510# 単位[kg/m3]　酸化剤密度
+#酸化剤　O2
+W_o = 32 # 単位[kg/kmol]　酸化剤剤分子量
+rho_o = 1141# 単位[kg/m3]　酸化剤密度
 dH_o = 0# 単位は[J/kmol]　酸化剤標準生成エンタルピー
 #燃料　H2
 W_f = 2# 単位[kg/kmol]　燃料分子量
 rho_f = 71# 単位[kg/m3]　燃料密度
 dH_f =0 # 単位[J/kmol]　燃料標準生成エンタルピー
 #生成物
-W_p = 20 # 単位[kg/kmol]
-dH_p = -271.2e6# 単位[J/kmol]
-coef_th = {'H2':1, 'F2':1, 'HF':2} #反応式の係数
+W_p = 18 # 単位[kg/kmol]
+dH_p = -241.9e6# 単位[J/kmol]
+coef_th = {'H2':2, 'O2':1, 'H2O':2} #反応式の係数
 # 無次元量　推進剤質量混合比　酸化剤/燃料
+
+#ここまで終了
 
 #燃焼室のパラメタ
 p_0 = 10e6# 単位[Pa]
 k = 5# 燃焼器スロート断面積比A1/At
 d_t = 2# タンク直径 単位[m]
 
-
 ##数値計算
 def flag(MR):
     fuel_rich_flag = True #fuel rich True
     nR = initial(MR)[2] #モル比　酸化剤/燃料
-    coef_r = coef_th['H2']/coef_th['F2'] #係数比　燃料/酸化剤
+    coef_r = coef_th['H2']/coef_th['O2'] #係数比　燃料/酸化剤
     if nR >coef_r:
         fuel_rich_flag = False
     return fuel_rich_flag
@@ -51,7 +52,7 @@ def initial(MR):
     nR = MR*W_f/W_o #モル比　酸化剤/燃料
     n_fr = 1/(1+nR)
     n_or = nR/(1+nR)#モル分率    
-    coef_r = coef_th['H2']/coef_th['F2'] #係数比　燃料/酸化剤    
+    coef_r = coef_th['H2']/coef_th['O2'] #係数比　燃料/酸化剤    
     n_total = 1
     nf_i = n_total*n_fr
     no_i = n_total*n_or
@@ -63,12 +64,12 @@ def reaction(MR):
     if fuel_rich_flag:
         n_rest_f = nf_i - no_i*coef_r
         n_rest_o = 0
-        n_p = no_i*coef_th['HF']/coef_th['F2']
+        n_p = no_i*coef_th['H2O']/coef_th['O2']
         M = n_rest_f*W_f + n_p*W_p
     else:
         n_rest_f = 0
         n_rest_o = no_i - nf_i/coef_r
-        n_p = nf_i*coef_th['HF']/coef_th['H2']
+        n_p = nf_i*coef_th['H2O']/coef_th['H2']
         M = n_rest_o*W_o + n_p*W_p
         
     return n_rest_f,n_rest_o,n_p,M
@@ -169,7 +170,7 @@ def get_L_t(MR):
     PR = get_PR(MR,p_0)
     fin,rho = get_fin(MR)
     mp = (1-PR)*(1-fin)*m_L/PR
-    L_t = mp/rho/np.pi*4/(d_t**2)
+    L_t = mp*4/rho/np.pi/(d_t**2)
     return L_t
 
 print(get_L(maxMR),get_D(maxMR,p_0),get_L_t(maxMR))
