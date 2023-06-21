@@ -10,7 +10,7 @@ X=digits.data #数字の画像データ
 y=digits.target #画像データに対応する数字の名前
 
 numbercolor=['BLACK','BROWN','RED','DARKORANGE','GOLD','GREEN','BLUE','PURPLE','GRAY','SKYBLUE']
-
+print(X)
 colors=[]
 for i in y: #何百個とあるｙそれぞれに対応した色のリストを作る
     colors.append(numbercolor[i])

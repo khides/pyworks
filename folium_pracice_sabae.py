@@ -1,7 +1,7 @@
 import pandas as pd
 import folium
 
-m=folium.Map(location=[35.942957,136.198863],zoom_start=16)
+m=folium.Map(location=[35.942957,136.198863],zoom_start=20)
 m.save('sabae.html')
 
 
@@ -19,7 +19,7 @@ for value in hydrant:
 m.save('hydrant.html')
 
 
-m=folium.Map(location=[35.942957,136.198863],zoom_start=16)
+m=folium.Map(location=[35.942957,136.198863],zoom_start=20)
 folium.Circle(location=[35.942957,136.198863],\
     radius=100,color='red',fill=True).add_to(m)
 df=pd.read_csv('898.csv')
