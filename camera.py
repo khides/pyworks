@@ -75,7 +75,7 @@ if __name__ == "__main__":
     # file_No += 1
     
     # file_path = './log'+ log_file_r[:22] + '.html' + '.jpg'
-    file_path = 'IMG_0868.jpg'
+    file_path = 'image.jpg'
 
     # print("taking pic...: {}".format(file_path))
     # camera.take_pic(file_path) # 写真を撮る

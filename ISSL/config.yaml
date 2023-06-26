@@ -1,0 +1,3 @@
+system_address : "serial:///dev/ttyACM0:115200"
+target1 : {"latitude": 10 ,"longitude": 0, "altitude": 0}
+time_fin : 300

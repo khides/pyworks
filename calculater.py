@@ -16,7 +16,7 @@ x = sp.Rational(-3,14)
 y = sp.Rational(-3,7)
 a = sp.Rational(-19,56)
 b = sp.Rational(-3,56)
-c = sp.Rational(-13,56)
+c = sp.Rational(13,56)
 d = sp.Rational(9,56)
 
 z = x*sp.Rational(6,5) +y*sp.Rational(1,2) + a*sp.Rational(1,2) + b*sp.Rational(4,5) + c*sp.Rational(1,2) + d*sp.Rational(1,5)
