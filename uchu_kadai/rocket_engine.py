@@ -145,6 +145,8 @@ maxTf = Tf_lst[PRidx]
 print("Tf:", maxTf)
 maxisp = Isp_lst[PRidx]
 print("Isp:", maxisp)
+maxfin = fin_lst[PRidx]
+print("fin:", maxfin)
 
 T_t = maxTf/((gam+1)/2)
 print("Tt:",T_t)
