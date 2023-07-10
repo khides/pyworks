@@ -1,5 +1,5 @@
 import numpy as np
-import sympy as sp
+import sympy
 from matplotlib import pyplot as plt
 
 #環境についてのパラメタ
@@ -38,7 +38,7 @@ M = 1/(1+nR)* W_f + nR/(1+nR)*W_o
 
 
 #圧力損失
-p_1 = sp.Symbol("p_1") #タービン入口圧力
+p_1 = sympy.Symbol("p_1") #タービン入口圧力
 alpha = 0.2
 beta = 0.2
 gamma = 0.4
@@ -65,7 +65,7 @@ G_cf = 1
 G_co = G_cf*MR_c
 
 eq = G_co *p_po/rho_o/eta_po + G_cf*p_pf/rho_f/eta_pf - G_cf*C_p*eta_t*T_1*(1-(p_2/p_1)**((gam-1)/gam))
-# fa = sp.solve(eq,p_1)
+# fa = sympy.solve(eq,p_1)
 # print(fa)
 pb_lst = np.linspace(1e7, 5e7, 100)
 vallst = []
@@ -79,3 +79,4 @@ plt.show()
 
 # print("p_po:", p_po)
 # print("p_pf:", p_pf)
+

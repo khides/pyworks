@@ -1,5 +1,5 @@
 import numpy as np
-import sympy as sp
+import sympy
 from matplotlib import pyplot as plt
 
 #課題２より#############################################
@@ -31,7 +31,7 @@ MR_c = 4.4 #燃焼室質量混合比(o/f)
 
 #ガスジェネレータ
 MR_g = 19/8 #ガスジェネレータ質量混合比(o/f) 化学量論比の1/8
-p_g = sp.Symbol("p_g") #ガスジェネレータ圧力
+p_g = sympy.Symbol("p_g") #ガスジェネレータ圧力
 nR = MR_g*W_f/W_o #モル比
 M = 1/(1+nR)* W_f + nR/(1+nR)*W_o #ガスジェネレータ内平均分子量
 
@@ -53,7 +53,7 @@ eta_po = 0.7
 eta_pf = 0.7
 
 #質量流量
-a = sp.Symbol("a")
+a = sympy.Symbol("a")
 #G_gfとの比
 G_gf = 1
 G_cf = a #aの定義
@@ -81,7 +81,7 @@ if __name__ == "__main__":
 
 
     eq = (G_co + G_go)*p_po/rho_o/eta_po + (G_cf + G_gf)*p_pf/rho_f/eta_pf - (G_go + G_gf)*C_p*eta_t*T_1*(1-(p_2/p_1)**((gam-1)/gam))
-    fa = sp.solve(eq,a)
+    fa = sympy.Symbol(eq,a)
 
     pg_lst = np.linspace(1e6,20e6,100)
     alst = []

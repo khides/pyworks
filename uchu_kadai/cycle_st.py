@@ -1,5 +1,5 @@
 import numpy as np
-import sympy as sp
+import sympy
 from matplotlib import pyplot as plt
 
 #課題２より#################################################
@@ -24,7 +24,7 @@ rho_f = 71# 単位[kg/m3]　燃料密度
 
 #プリバーナ
 MR_b = 0.9 #ガスジェネレータ質量混合比(o/f)
-p_b = sp.Symbol("p_b")
+p_b = sympy.Symbol("p_b")
 nR = MR_b*W_f/W_o
 M = 1/(1+nR)* W_f + nR/(1+nR)*W_o
 
@@ -66,7 +66,7 @@ dp_pdo = dp_ib + p_b - p_po
 
 
 eq = G_bo*dp_pdo/rho_o/eta_pdo + (G_co + G_bo)*p_po/rho_o/eta_po + G_f*p_pf/rho_f/eta_pf - (G_bo + G_bf)*C_p*eta_t*T_1*(1-(p_2/p_1)**((gam-1)/gam))
-# fa = sp.solve(eq,p_b)
+# fa = sympy.solve(eq,p_b)
 # print(fa)
 pb_lst = np.linspace(1e7, 5e7, 100)
 vallst = []
