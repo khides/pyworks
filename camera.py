@@ -14,8 +14,8 @@ class Camera:
     #     self.camera.capture(file_path)
 
     def save_detected_img(self, file_path, img, center_px):
-        cv2.circle(img, (int(center_px[0]), int(center_px[1])), 10, (0, 200, 0),
-                thickness=3, lineType=cv2.LINE_AA)
+        cv2.circle(img, (int(center_px[0]), int(center_px[1])), 50, (0, 200, 0),
+                thickness=20, lineType=cv2.LINE_AA)
         cv2.imwrite(file_path, img)
 
     def detect_center(self, file_path):
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     # file_No += 1
     
     # file_path = './log'+ log_file_r[:22] + '.html' + '.jpg'
-    file_path = 'image.jpg'
+    file_path = 'IMG_0868.jpg'
 
     # print("taking pic...: {}".format(file_path))
     # camera.take_pic(file_path) # 写真を撮る

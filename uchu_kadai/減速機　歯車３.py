@@ -4,7 +4,7 @@ import math
 
 
 alpha = 20 #[degree]圧力角
-mi = 4 #[mm]１と２のモジュール
+mi = 3 #[mm]１と２のモジュール
 mo = 6 #[mm]３と４のモジュール
 fw = 0.74 #荷重係数
 fb = 3 #歯幅係数　3~5
@@ -25,7 +25,7 @@ for a,b,c,d in itertools.product(slst,blst,slst,blst):
             if math.gcd(a,b) == 1:
                 if math.gcd(c,d) == 1:
                     glst.append([a,b,c,d]) #入出力軸のずれなし、ギア比が19.9以上20.1以下、１と２、３と４が互いに素
-print(glst)
+print("a",glst)
 
 
 
@@ -59,4 +59,4 @@ for lst in glst:
                     finlst.append(lst)
 
 for lst in finlst:
-    print(lst)
+    print("b",lst)

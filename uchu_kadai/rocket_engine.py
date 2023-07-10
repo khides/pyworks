@@ -130,24 +130,24 @@ for i in range(4):
     ax.plot(MR_lst,result[i])
     ax.set_title(name[i])   
     ax.grid()
-plt.savefig('vs_MR.pdf')
-plt.show()
+# plt.savefig('vs_MR.pdf')
+# plt.show()
 
 
 ##ペイロード比の最大値と、その時の質量混合比
 maxPR = max(PR_lst)
-print(maxPR)
+print("PR:",maxPR)
 PRidx = PR_lst.index(maxPR)
-print(PRidx)
+# print(PRidx)
 maxMR = MR_lst[PRidx]
-print(maxMR)
+print("MR:", maxMR)
 maxTf = Tf_lst[PRidx]
-print(maxTf)
+print("Tf:", maxTf)
 maxisp = Isp_lst[PRidx]
-print(maxisp)
+print("Isp:", maxisp)
 
 T_t = maxTf/((gam+1)/2)
-print(T_t)
+print("Tt:",T_t)
 
 ##燃焼室及びタンク寸法の数値計算
 def get_L(MR):
@@ -172,7 +172,7 @@ def get_L_t(MR):
     L_t = mp/rho/np.pi*4/(d_t**2)
     return L_t
 
-print(get_L(maxMR),get_D(maxMR,p_0),get_L_t(maxMR))
+print("L:", get_L(maxMR), "D:", get_D(maxMR,p_0),"L_t:", get_L_t(maxMR))
 
 
 ##燃焼室圧力変化
@@ -197,5 +197,5 @@ for i in range(4):
     ax.set_title(name[i])   
     ax.grid()
 
-plt.savefig('vs_p_0.pdf')
-plt.show()
+# plt.savefig('vs_p_0.pdf')
+# plt.show()
