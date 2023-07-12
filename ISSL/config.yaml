@@ -1,3 +1,12 @@
-system_address : "serial:///dev/ttyACM0:115200"
-target1 : {"latitude": 10 ,"longitude": 0, "altitude": 0}
-time_fin : 300
+system_address: serial:///dev/ttyACM0:115200
+target1:
+  latitude: 5.5
+  longitude: 5.5
+  altitude: 0
+time_fin: 300
+target2:
+  latitude: 4.181818181818182
+  longitude: 4.181818181818182
+target3:
+  latitude: 4.181818181818182
+  longitude: 4.181818181818182

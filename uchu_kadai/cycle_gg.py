@@ -28,7 +28,6 @@ MR_c = 4.4 #燃焼室質量混合比(o/f)
 
 ######################################################
 
-
 #ガスジェネレータ
 MR_g = 19/8 #ガスジェネレータ質量混合比(o/f) 化学量論比の1/8
 p_g = sympy.Symbol("p_g") #ガスジェネレータ圧力
@@ -61,13 +60,10 @@ G_go = MR_g
 G_co = a*MR_c
 
 #圧力損失
-def pressure_los(p_c, p_g):
+def pressure_loss(p_g):
     dp_ic = alpha*p_c
     dp_ig = beta*p_g
     dp_cool = gamma*p_c
-    return dp_ic, dp_ig, dp_cool
-#ポンプ圧力
-def pump_pressure(dp_ig, dp_ic, dp_cool):
     p_po = dp_ig + p_g
     p_pf = dp_ic + dp_cool + p_c
     return p_po, p_pf
@@ -76,31 +72,31 @@ def pump_pressure(dp_ig, dp_ic, dp_cool):
 
 
 if __name__ == "__main__":    
-    dp_ic, dp_ig, dp_cool = pressure_los(p_c, p_g)
-    p_po, p_pf = pump_pressure(dp_ig, dp_ic, dp_cool)
-
-
+    p_po, p_pf = pressure_loss(p_g)
+    
+    #ポンプ駆動とタービン出力のつり合い式
     eq = (G_co + G_go)*p_po/rho_o/eta_po + (G_cf + G_gf)*p_pf/rho_f/eta_pf - (G_go + G_gf)*C_p*eta_t*T_1*(1-(p_2/p_1)**((gam-1)/gam))
-    fa = sympy.Symbol(eq,a)
-
+    fa = sympy.solve(eq,a)
+    print(fa[0])
+    
+    #グラフ描画
     pg_lst = np.linspace(1e6,20e6,100)
     alst = []
     for val in pg_lst:
         alst.append(float(fa[0].subs(p_g,val)))
-
     fig, ax = plt.subplots()
     ax.plot(pg_lst, alst)
     ax.grid()
     plt.show()
     
+    #最適化
     a_max = max(alst)
     id =alst.index(a_max)
     p_g = pg_lst[id]
     print(f"p_g:{p_g}")
-    
-    dp_ic, dp_ig, dp_cool = pressure_los(p_c, p_g)
-    p_po, p_pf = pump_pressure(dp_ig, dp_ic, dp_cool)
 
+    #outputs
+    p_po, p_pf = pressure_loss(p_g)    
     print(f"p_po:{p_po}")
     print(f"p_pf:{p_pf}")
 
