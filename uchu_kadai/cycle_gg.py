@@ -8,6 +8,7 @@ Isp = 416.9388876840935
 f_in = 0.09496404977066682
 g_0 = 9.8 # m/s2
 dV = 7000 # m/s
+F = 270248.8057814671 #N
 
 #環境についてのパラメタ
 R_0 = 8314.3 # J/(kmolK) 
@@ -86,6 +87,8 @@ if __name__ == "__main__":
         alst.append(float(fa[0].subs(p_g,val)))
     fig, ax = plt.subplots()
     ax.plot(pg_lst, alst)
+    ax.set_xlabel("p_g")
+    ax.set_ylabel("a")
     ax.grid()
     plt.show()
     
@@ -100,11 +103,16 @@ if __name__ == "__main__":
     print(f"p_po:{p_po}")
     print(f"p_pf:{p_pf}")
 
-    m_1 = a_max + MR_c #燃焼室に向かう質量流量
+    m_1 = a_max + a_max*MR_c #燃焼室に向かう質量流量
     m_2 = 1 + MR_g #タービンに向かう質量流量
     Isp = Isp*m_1/(m_1+m_2)
     print(f"Isp:{Isp}")
+    
+    
 
     V_j = Isp*g_0
     PR = (np.exp(-dV/V_j) - f_in)/(1-f_in)
-    print(f"PR{PR*100}%")
+    print(f"PR:{PR*100}%")
+    
+    F = F*m_1/(m_1+m_2)
+    print("F", F)

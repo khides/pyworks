@@ -50,7 +50,7 @@ eta_pf = 0.7
 G_bf = 1
 G_cf = G_bf
 G_bo = MR_b
-G_co = G_cf*MR_c
+G_co = G_cf*MR_c - G_bo
 G_f = G_cf
 
 #圧力損失

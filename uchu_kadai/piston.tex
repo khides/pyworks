@@ -1,0 +1,67 @@
+\documentclass[a4paper, titlepage]{jsarticle}
+\usepackage[dvipdfmx]{graphicx} % Required for inserting images
+\usepackage{comment}
+\usepackage{amsmath}
+\usepackage[margin=20truemm]{geometry}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{here}
+\usepackage{multicol}
+\usepackage{url}
+
+\begin{document}
+\begin{table}[h]
+    \caption{ピストン及びピストンピンの寸法}
+    \label{table:SpeedOfLight}
+    \centering
+    \begin{tabular}{lllll}
+       \hline
+       項目       & 記号        & 標準寸法      & 寸法範囲[mm] & 決定値[mm] \\
+       \hline \hline
+       シリンダ内径 & D&  &  & 80\\
+       ピストン全高 & L&(0.9\sim1.0)D &72\sim80 &72\\
+       ピストン圧縮高さ &L_1 &(0.4\sim0.5)D &32\sim40 &32\\
+       ピン下方部高さ &L_2& L − L_1 &&40\\
+       トップランド高さ& L_r &(0.06\sim0.10)D &4.8\sim8.0 &4.8\\
+       コンプレッションリングみぞ幅& h &(0.03\sim0.04)D &2.4\sim3.2 &2.5\\
+       オイルリングみぞ幅 &h'&(0.05\sim0.10)D &4.0\sim8.0 &4.0\\
+       ランド幅 &l_e &(1.0\sim1.3)h &2.5\sim3.25 &2.5\\
+       ピン穴径 &d_p &(0.24\sim0.3)D &19.2\sim24 &20\\
+       ピンボス外径 &d'_p& (1.4\sim1.5)d_p &28\sim30& 28\\
+       \end{tabular}
+   \end{table}
+   \begin{table}[h]
+    % \caption{ピストン及びピストンピンの寸法}
+    % \label{table:SpeedOfLight}
+    \centering
+    \begin{tabular}{lllll}
+       ピンボス間距離 &l_p &(0.3\sim0.4)D &24\sim32 &24\\
+       スカート下端肉厚 &t′&(0.02\sim0.03)D &1.6\sim2.4 &1.6\\
+       頭部肉厚 &t &(0.06\sim0.065)D& 4.8\sim5.2 &4.8\\
+       すきま\\
+       最上部 &b1 &0.8D × 10^−2 &0.64& 0.64\\
+       ランド部& b'_1& 0.6D × 10^−2 &0.48 &0.48\\
+       しゅう動部分上部 &b'_2&(0.4\sim0.6)D × 10^-2 &0.32\sim0.48 &0.48\\
+       しゅう動部分下部 &b_2 &(0.2\sim0.3)D × 10^−2 &0.16\sim0.24 &0.24\\
+       ピストン外径\\
+       最上部 &D1 &D − b_1 &79.36 &79.36\\
+       \end{tabular}
+   \end{table}
+   \begin{table}[h]
+    % \caption{ピストン及びピストンピンの寸法}
+    % \label{table:SpeedOfLight}
+    \centering
+    \begin{tabular}{lllll}
+       ランド部 &D'_1 &D − b'_1 &79.52 &79.52\\
+       しゅう動部分上部 &D'_2& D − b'_2 &79.52\sim79.68& 79.52\\
+       しゅう動部分下部 &D_2& D − b_2 &79.76\sim79.84 &79.76\\
+       ピストン上部内径 &d_r &(0.7\sim0.8)D &56\sim64 &64\\
+       コンプレッションリング厚さ &T_c &&&3.35\\
+       オイルリング厚さ& T_o &&&3.35\\
+       コンプレッションリング内径 &A_c&D − (2T_c + 0.007D + 0.635) &&72.11\\
+       オイルリング内径 &A_o &D − (2T_o + 0.006D + 1.524)&& 71.30\\
+       \hline
+    \end{tabular}
+\end{table}
+
+\end{document}

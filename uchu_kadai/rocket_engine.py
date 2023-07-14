@@ -147,6 +147,8 @@ maxisp = Isp_lst[PRidx]
 print("Isp:", maxisp)
 maxfin = fin_lst[PRidx]
 print("fin:", maxfin)
+maxF = 2000/maxPR*1.3*g_0
+print("F:",maxF)
 
 T_t = maxTf/((gam+1)/2)
 print("Tt:",T_t)

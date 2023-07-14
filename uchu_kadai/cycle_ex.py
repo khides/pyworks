@@ -52,7 +52,7 @@ G_co = G_cf*MR_c
 def pressure_loss(p_1):
     dp_ic = alpha*p_c
     dp_cool = gamma*p_c
-    p_pf = dp_cool + dp_ic + p_1
+    p_pf = dp_cool + p_1
     p_2 = p_c +dp_ic #タービン出口圧力
     p_po = dp_ic + p_c
     return p_po, p_pf, p_2
