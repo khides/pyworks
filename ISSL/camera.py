@@ -26,8 +26,8 @@ class Camera:
         hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV_FULL) # 色基準で2値化する(HSVで色を表す)
 
         # 色の範囲を指定する
-        hsv_min = np.array([0,145,0]) #0-255, 0-255, 0-255
-        hsv_max = np.array([15,255,255])
+        hsv_min = np.array([0,85,0]) #0-255, 0-255, 0-255
+        hsv_max = np.array([40,255,255])
         mask = cv2.inRange(hsv, hsv_min, hsv_max)
 
         # 赤色のHSVの値域2　補色で赤色の値域を設定
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     # file_No += 1
     
     # file_path = './log'+ log_file_r[:22] + '.html' + '.jpg'
-    file_path = 'IMG_0868.jpg'
+    file_path = '003.jpg'
 
     # print("taking pic...: {}".format(file_path))
     # camera.take_pic(file_path) # 写真を撮る

@@ -1,12 +1,33 @@
+drone: true
+case: true
+camera: false
+lora: true
 system_address: serial:///dev/ttyACM0:115200
 target1:
-  latitude: 5.5
-  longitude: 5.5
-  altitude: 0
+  latitude: 40.21477646999999
+  longitude: 140.24713551999997
+  altitude: 5
 time_fin: 300
 target2:
-  latitude: 4.181818181818182
-  longitude: 4.181818181818182
-target3:
-  latitude: 4.181818181818182
-  longitude: 4.181818181818182
+  latitude: 35.7138415
+  longitude: 139.76050941
+camera:
+  h: [1,1]
+  s: [2,2]
+  v: [3,3]
+mode: mission
+nichrome_time: 5
+setting_presen_time: 0.03
+writing_presen_time: 0.03
+presen_rest_time: 0.03
+ligsen_rest_time: 0.03
+judge_storage_maxtime: 300
+judge_storage_loop_time: 0.5
+judge_storage_border_light: 500
+judge_release_maxtime: 200
+judge_release_border_light: 500
+judge_landing_maxtime: 30
+judge_landing_sleep_time: 2
+pre_count_max: 15
+pressure_tolerance: 0.08
+maxmax_time: 400
