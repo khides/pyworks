@@ -3,7 +3,7 @@ import sys
 with open("config.yaml", mode="r") as f:
     conf = OmegaConf.load(f)
 
-print(conf.camera.h[0])
+print(conf.hsv.h[0])
 # condition =""
 # try:
 #     condition = sys.argv[1]

@@ -9,7 +9,7 @@ class Camera:
     def __init__(self):
         # self.camera = picamera.PiCamera()
         print('キャメラ初期化完了')
-    
+
     # def take_pic(self, file_path):
     #     self.camera.capture(file_path)
 
@@ -26,13 +26,13 @@ class Camera:
         hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV_FULL) # 色基準で2値化する(HSVで色を表す)
 
         # 色の範囲を指定する
-        hsv_min = np.array([0,85,0]) #0-255, 0-255, 0-255
-        hsv_max = np.array([40,255,255])
+        hsv_min = np.array([0*255/360, 0*255/100, 0*255/100]) #カメラ故障のため，0→150へ変更
+        hsv_max = np.array([100*255/360, 100*255/100, 30*255/100])
         mask = cv2.inRange(hsv, hsv_min, hsv_max)
 
-        # 赤色のHSVの値域2　補色で赤色の値域を設定
-        # hsv_min = np.array([150,110,0]) #カメラ故障のため，0→150へ変更
-        # hsv_max = np.array([179,255,255])
+        # # 赤色のHSVの値域2　補色で赤色の値域を設定
+        # hsv_min = np.array([300*255/360, 80*255/100, 90*255/100]) #カメラ故障のため，0→150へ変更
+        # hsv_max = np.array([360*255/360, 100*255/100, 100*255/100])
         # mask2 = cv2.inRange(hsv, hsv_min, hsv_max)
 
         # mask = mask + mask2
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     # file_No += 1
     
     # file_path = './log'+ log_file_r[:22] + '.html' + '.jpg'
-    file_path = '003.jpg'
+    file_path = '074.jpg'
 
     # print("taking pic...: {}".format(file_path))
     # camera.take_pic(file_path) # 写真を撮る

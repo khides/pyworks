@@ -1,12 +1,7 @@
-import asyncio
+import numpy as np
 
-async def a():
-    return True
-
-async def main():
-    if await a():
-        print("a")
-    
-    
-if __name__ == "__main__":
-    asyncio.run(main())
+array = np.array([0,
+                  0,
+                  0])
+if not np.count_nonzero(np.isnan(array)):
+    print(np.count_nonzero(np.isnan(array)))

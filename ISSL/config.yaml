@@ -1,33 +1,46 @@
 drone: true
-case: true
-camera: false
+case: false
+camera: true
 lora: true
 system_address: serial:///dev/ttyACM0:115200
 target1:
-  latitude: 40.21477646999999
-  longitude: 140.24713551999997
-  altitude: 5
-time_fin: 300
+  latitude: 35.79682295
+  longitude: 139.89181065
+  altitude: 8
+precise_timeout: 300
+reboot_time: 1200
+percent: 0.0003
 target2:
   latitude: 35.7138415
   longitude: 139.76050941
-camera:
-  h: [1,1]
-  s: [2,2]
-  v: [3,3]
 mode: mission
+hsv: 
+  h:
+  - 0
+  - 40
+  s:
+  - 0
+  - 50
+  v:
+  - 60
+  - 100
+photo:
+  framerate: 30
+  shutter_speed: 0
+  exposure_mode: 'auto'
 nichrome_time: 5
-setting_presen_time: 0.03
-writing_presen_time: 0.03
-presen_rest_time: 0.03
 ligsen_rest_time: 0.03
-judge_storage_maxtime: 300
-judge_storage_loop_time: 0.5
+presen_rest_time: 0.05
+judge_storage_countmax: 1000000
+judge_storage_maxtime: 1200
 judge_storage_border_light: 500
-judge_release_maxtime: 200
+judge_storage_sleep_time: 0.5
+judge_release_lig_countmax: 1000000
+judge_release_pre_countmax: 1000000
+judge_release_maxtime: 3600
 judge_release_border_light: 500
-judge_landing_maxtime: 30
-judge_landing_sleep_time: 2
-pre_count_max: 15
-pressure_tolerance: 0.08
-maxmax_time: 400
+judge_release_disp_fore: 0.4
+judge_landing_countmax: 1000000
+judge_landing_maxtime: 1200
+pressure_tolerance: 0.00001
+judge_landing_sleep_time: 1
