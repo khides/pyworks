@@ -1,13 +1,3 @@
-import sympy as sym
-
-M=sym.Matrix([
-    [0,3,3],
-    [-3,0,2],
-    [-3,-2,0]])
-print(M.eigenvects())
-
-
-
 
 import my_module
 
@@ -91,3 +81,12 @@ target=draw_circle(X,Y)
 draw_boudary(X,Y,pred,target)
 
 
+
+class IntBox:
+    def __init__(self, value) -> None:
+        self.value = value
+
+a = IntBox(1)
+b = a
+a.value = 2
+print(a.value)    

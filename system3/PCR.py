@@ -1,8 +1,34 @@
 import random
 import numpy as np
 from matplotlib import pyplot as plt
+import math
+
+N = 1000000
+E = 0
+m = 10
+p = 0.001
+# for i in range(N):
+#     E += (N/10 + i*m)*math.comb(N/m, i)*(1-(1-p)**m)**i*((1-p)**m)**(N/m-i)
+
+m_lst = np.arange(1, 200 + 1)
+Elst = []
+def Expect(m, p):
+    E = N/m*(1+m-m*(1-p)**m)
+    return E
+for m in m_lst:
+    Elst.append(Expect(m, p))
+
+fig, ax = plt.subplots()
+ax.plot(m_lst,Elst)
+plt.show()
+
+
+plst = np.arange(0,1,0.0001)
+
+
 
 N = 10000
+
 
 def group_inspect(m, p =0.001):
     ratio = m/N
@@ -23,7 +49,9 @@ def group_inspect(m, p =0.001):
     return inspect_times
 
 
-m_lst = np.arange(25, 200 + 1)
+
+m_lst = np.arange(1, 500 + 1)
+
 # print(m_lst)
 times_lst = []
 for m in m_lst:
