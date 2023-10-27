@@ -10,6 +10,9 @@ ans = sympy.dsolve(eq, x(t), ics={x.subs(0):1, sympy.diff(x,t,1).subs(0):0}).rhs
 print(ans)
 ans.subs(0)
 
+
+
+
 # timelst = np.arange(0, 100, 1)
 # xlst = []
 # for t in timelst:
