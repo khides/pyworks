@@ -1,3 +1,43 @@
+import numpy as np
+
+mu = 398600
+
+V = np.sqrt(2*mu/6658 - 2*mu/(6658 + 42164)) - np.sqrt(mu/6658)
+print(V)
+
+re = 3000*(np.exp(-V*1000/9.8/310) - 1)
+print(re)
+
+
+import numpy as np
+
+mu = 398600
+
+V = np.sqrt(2*mu/6778 - 2*mu/(6778 + 8378)) - np.sqrt(mu/6778)
+print(V)
+
+re = 2800*(np.exp(-V*1000/9.8/290) - 1)
+print(re)
+
+import numpy as np
+re = 2000*(np.exp(200/9.8/225) - 1)
+print(re)
+
+import numpy as np
+mu = 398600
+Vi = np.sqrt(mu/6653)
+print(Vi)
+
+
+dV = 2*Vi*np.sin(np.deg2rad(3)/2)
+print(dV)
+
+re = 220000*(np.exp(-dV*1000/9.8/320) - 1)
+print(re)
+
+
+
+
 
 import my_module
 
