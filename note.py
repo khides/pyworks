@@ -1,3 +1,19 @@
+import numpy as np 
+high = 8.5
+low = 5.3
+res = np.log(high / low) / np.pi/2
+print(res)
+
+
+import numpy as np
+# gc = 9.8
+gc = 32.174
+isp = 456
+
+dv = gc * isp * np.log((1326 + 7920 + 25320 + 36)/(7920 + 1326 + 36 ))
+print(dv)
+
+
 import numpy as np
 
 mu = 398600

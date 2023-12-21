@@ -1,3 +1,5 @@
-import numpy as np
-re = 2000*(np.exp(200/9.8/225) - 1)
-print(re)
+import numpy as np 
+high = 8.5
+low = 5.3
+res = np.log(high / low) / np.pi/2
+print(res)
